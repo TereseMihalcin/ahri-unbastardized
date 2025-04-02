@@ -1,5 +1,41 @@
 # ahri-unbastardized
 Wedding website for me and lizzy
+
+## Layout:
+
+### Pages
+
+homepage
+
+RSVP
+
+Registry
+
+About/Our story
+
+Travel and Stay
+
+### Notes / Ideas
+
+Outdoor wedding disclosure
+
+Dress Code
+
+Venue Directions
+
+Map of Venue?
+
+Wedding schedule?
+
+Wedding tunes?
+
+Children?
+
+Plus ones?
+
+Printable E-invitation
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
