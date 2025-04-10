@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/navigation.css';
 import Home from "./pages";
 import Navigation from "./components/navigation";
 import {
