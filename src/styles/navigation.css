@@ -1,3 +1,9 @@
+:root {
+    --gray: #7d93a5;
+    --green: #bfc994;
+    --background: #fcf8ef;
+}
+
 .sticky-top {
-   background: #91b572;
+   background: var(--green);
 }

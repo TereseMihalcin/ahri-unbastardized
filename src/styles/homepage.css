@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+:root {
+   --gray: #7d93a5;
+   --green: #bfc994;
+   --background: #fcf8ef;
+}
+.wedding{
+  background: var(--background);
+}
+.title {
+   margin: 100px;
+}
+.title h1 {
+   font-family: "Bonheur Royale", cursive;
+   font-size: 8em;
+   color: var(--gray);
+}

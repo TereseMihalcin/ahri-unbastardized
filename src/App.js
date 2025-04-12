@@ -1,4 +1,5 @@
 import './styles/navigation.css';
+import './styles/homepage.css';
 import Home from "./pages";
 import Navigation from "./components/navigation";
 import {
