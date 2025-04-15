@@ -16,3 +16,7 @@
    font-size: 8em;
    color: var(--gray);
 }
+.photo-container {
+   background-color: #bfc994;
+   padding-bottom:100px;
+}
