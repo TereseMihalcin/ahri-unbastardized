@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Slackey&display=swap'); 
+
+:root {
+    --gray: #7d93a5;
+    --green: #bfc994;
+    --background: #fcf8ef;
+}
+
+.rsvp h2 {
+    font-family: "Slackey", sans-serif;
+    font-size: 5em;
+    color: var(--gray);
+}
