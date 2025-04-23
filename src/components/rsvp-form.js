@@ -1,31 +1,33 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
-  export default function RsvpForm() {
-    return (
-      <>
-        <label>
-          Text input: <input name="myInput" />
-        </label>
-        <hr />
-        <label>
-          Checkbox: <input type="checkbox" name="myCheckbox" />
-        </label>
-        <hr />
-        <p>
-          Radio buttons:
-          <label>
-            <input type="radio" name="myRadio" value="option1" />
-            Option 1
-          </label>
-          <label>
-            <input type="radio" name="myRadio" value="option2" />
-            Option 2
-          </label>
-          <label>
-            <input type="radio" name="myRadio" value="option3" />
-            Option 3
-          </label>
-        </p>
-      </>
-    );
-  }
+function RsvpForm() {
+  return (
+    <Form class="d-flex">
+      <Form.Group className="mb-3" controlId="formBasicFirstName">
+        <Form.Label>First Name</Form.Label>
+        <Form.Control type="text" placeholder="Enter first name" />
+        <Form.Text className="text-muted">
+          Just be honest
+        </Form.Text>
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicLastName">
+        <Form.Label>Last Name</Form.Label>
+        <Form.Control type="text" placeholder="Enter last name" />
+        <Form.Text className="text-muted">
+          Dont lie to me
+        </Form.Text>
+      </Form.Group>
+      <Form.Group className="mb-3 flex-grow-1" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+  );
+}
+
+export default RsvpForm;
