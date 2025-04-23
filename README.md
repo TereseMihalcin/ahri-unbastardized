@@ -17,6 +17,11 @@ Travel and Stay
 
 ### Notes / Ideas
 
+rsvp - export the formdata to a json file, can upload to a spreadsheet from there
+
+form fields - firstname, lastname, amount in party including yourself, option to add other names
+
+
 Outdoor wedding disclosure
 
 Dress Code
