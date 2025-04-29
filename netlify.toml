@@ -12,12 +12,12 @@
   # This sample publishes the directory located at the absolute 
   # path "/build"
 
-  publish = "build/"
+  publish = "/"
 
   # Default build command.
   # command = "echo 'default context'"
 
-[[plugins]]
+# [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
   # package = "@netlify/plugin-lighthouse"
 
