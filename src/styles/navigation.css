@@ -4,6 +4,7 @@
     --background: #fcf8ef;
 }
 
-.sticky-top {
+.wedding .sticky-top {
    background: var(--green);
+   z-index: 0; /* for neko */
 }
