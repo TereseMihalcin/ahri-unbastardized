@@ -2,12 +2,29 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import axios from 'axios';
 
 export default function Rsvpform() {
   function rsvpform(formData) {
+    const myform = document.querySelector('form');
+    var form = new FormData();
+    form.append('name', 'my name');
+    console.log(form);
     const first = formData.get("first");
     const last = formData.get("last");
-    alert(`you submitted: '${first} ${last}'`);
+
+
+  axios.post('https://httpbin.org/post', {
+      body: form,
+  }, {
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+  }).then(({data})=> console.log(data))
+  .catch(error => {
+    console.error(error);
+});
+   
     // here you'll submit to a form, that you'll display on a page, with export options
   }
   return (
