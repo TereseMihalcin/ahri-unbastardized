@@ -30,7 +30,7 @@ export default function Rsvpform() {
     // here you'll submit to a form, that you'll display on a page, with export options
   }
   return (
-    <Form class="d-flex" netlify>
+    <Form className="d-flex" netlify>
       <Form.Group className="mb-3" controlId="formBasicFirstName">
       <Form.Label>First Name</Form.Label>
         <Form.Control type="text" name="first" placeholder="" />
