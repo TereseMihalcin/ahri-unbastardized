@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 // import axios from 'axios';
 
 export default function Rsvpform() {
-   function rsvpform() {
+//   function rsvpform() {
 //     const myform = document.querySelector('form');
 //     var form = new FormData(myform);
 //     //form.append('name', 'my name');
@@ -28,9 +28,9 @@ export default function Rsvpform() {
 // });
    
     // here you'll submit to a form, that you'll display on a page, with export options
-  }
+//  }
   return (
-    <Form className="d-flex" netlify>
+    <Form data-netlify="true" >
       <Form.Group className="mb-3" controlId="formBasicFirstName">
       <Form.Label>First Name</Form.Label>
         <Form.Control type="text" name="first" placeholder="" />
