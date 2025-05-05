@@ -2,33 +2,35 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import axios from 'axios';
+// import axios from 'axios';
 
 export default function Rsvpform() {
-  function rsvpform(formData) {
-    const myform = document.querySelector('form');
-    var form = new FormData();
-    form.append('name', 'my name');
-    console.log(form);
-    const first = formData.get("first");
-    const last = formData.get("last");
+   function rsvpform() {
+//     const myform = document.querySelector('form');
+//     var form = new FormData(myform);
+//     //form.append('name', 'my name');
+//     const first = form.get("first");
+//     const last = form.get("last");
+
+//     console.log(first);
 
 
-  axios.post('https://httpbin.org/post', {
-      body: form,
-  }, {
-    headers: {
-      'Content-Type': 'multipart/form-data'
-    }
-  }).then(({data})=> console.log(data))
-  .catch(error => {
-    console.error(error);
-});
+//   axios.post('https://httpbin.org/post', {
+//       firstname: first,
+//       lastname: last,
+//   }, {
+//     headers: {
+//       'Content-Type': 'multipart/form-data'
+//     }
+//   }).then(({data})=> console.log(data))
+//   .catch(error => {
+//     console.error(error);
+// });
    
     // here you'll submit to a form, that you'll display on a page, with export options
   }
   return (
-    <Form class="d-flex" action={rsvpform}>
+    <Form class="d-flex" action={rsvpform} netlify>
       <Form.Group className="mb-3" controlId="formBasicFirstName">
       <Form.Label>First Name</Form.Label>
         <Form.Control type="text" name="first" placeholder="" />
