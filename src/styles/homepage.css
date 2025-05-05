@@ -16,7 +16,28 @@
    font-size: 8em;
    color: var(--gray);
 }
-.photo-container {
+.photo-layer {
    background-color: #bfc994;
    padding-bottom:100px;
 }
+.photo-layer .photos {
+   justify-content: center;
+}
+.photo-layer .photo-container {
+   max-width:1200px;
+}
+.photo-layer ul {
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+ }
+ .photo-layer li {
+   height: 30vh;
+   flex-grow: 1;
+ }
+ .photo-layer img {
+   max-height: 100%;
+   min-width: 100%;
+   object-fit: cover;
+   vertical-align: bottom;
+ }
