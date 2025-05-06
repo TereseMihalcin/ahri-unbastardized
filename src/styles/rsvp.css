@@ -9,6 +9,11 @@
     --background: #fcf8ef;
 }
 
+.rsvp {
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
 .rsvp h2 {
     font-family: "DM Serif Text", serif;
     font-size: 5em;
