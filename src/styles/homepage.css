@@ -9,8 +9,12 @@
   background: var(--background);
 }
 .title {
-   margin: 100px;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   padding:20px;
+
 }
+
 .title h1 {
    font-family: "Bonheur Royale", cursive;
    font-size: 8em;
@@ -19,7 +23,6 @@
 
 .photo-layer {
    background-color: #bfc994;
-   padding-bottom:100px;
 }
 .photo-layer .photos {
    justify-content: center;
@@ -31,18 +34,24 @@
    display: flex;
    flex-wrap: wrap;
    list-style: none;
+   padding-left: unset; /* i really dunno */
 }
 .photo-layer li {
-   height: 16vh;
+   height: 17vh;
    flex-grow: 1;
+   padding: 5px;
 }
 .photo-layer img {
    max-height: 100%;
    min-width: 100%;
    object-fit: cover;
    vertical-align: bottom;
+   border-radius: 15px;
 }
-
+.photo-layer .photos {
+   padding-bottom:50px;
+   padding-top:50px;
+}
 .rsvp-home h2 {
    font-family: "DM Serif Text", serif;
    font-size: 5em;
@@ -51,5 +60,12 @@
 
 .rsvp-home .form-container {
    width: 400px;
+   max-width: 100%;
    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 480px) {
+   .title h1 {
+      font-size: 4em;
+   }
 }

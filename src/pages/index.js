@@ -15,16 +15,16 @@ const Home = () => {
                     <div class="photo-container">
                     <ul>
                         <li>
-                            <img src="./images/IMG_9999.png" alt="Terese and Lizzy"/>
+                            <img src="./images/IMG_9999.jpg" alt="Terese and Lizzy"/>
                         </li>
                         <li>
-                            <img src="./images/IMG_9195.png" alt="Terese and Lizzy"/>
+                            <img src="./images/IMG_9195.jpg" alt="Terese and Lizzy"/>
                         </li>
                         <li>
-                            <img src="./images/IMG_9707.png" alt="Terese and Lizzy"/>
+                            <img src="./images/IMG_9707.jpg" alt="Terese and Lizzy"/>
                         </li>
                         <li>
-                            <img src="./images/IMG_9107.png" alt="Terese and Lizzy"/>
+                            <img src="./images/IMG_9107.jpg" alt="Terese and Lizzy"/>
                         </li>
                         <li>
                             <img src="./images/IMG_9152.jpg" alt="Terese and Lizzy"/>
