@@ -32,6 +32,30 @@ const Home = () => {
                         <li>
                             <img src="./images/IMG_9176.jpg" alt="Terese and Lizzy"/>
                         </li>
+                        <li>
+                            <img src="./images/beach.jpg" alt="Terese and Lizzy"/>
+                        </li>
+                        <li>
+                            <img src="./images/early-ri.jpg" alt="Terese and Lizzy"/>
+                        </li>
+                        <li>
+                            <img src="./images/gams.jpg" alt="Terese and Lizzy"/>
+                        </li>
+                        <li>
+                            <img src="./images/grad.jpg" alt="Terese and Lizzy"/>
+                        </li>
+                        <li>
+                            <img src="./images/lizzy-cute.jpg" alt="Terese and Lizzy"/>
+                        </li>
+                        <li>
+                            <img src="./images/maine.jpg" alt="Terese and Lizzy"/>
+                        </li>
+                        <li>
+                            <img src="./images/prov.jpg" alt="Terese and Lizzy"/>
+                        </li>
+                        <li>
+                            <img src="./images/wedding.jpg" alt="Terese and Lizzy"/>
+                        </li>
                     </ul>
                     </div>
                 </div>

@@ -33,7 +33,7 @@
    list-style: none;
 }
 .photo-layer li {
-   height: 30vh;
+   height: 16vh;
    flex-grow: 1;
 }
 .photo-layer img {
