@@ -12,15 +12,12 @@
    margin-top: 100px;
    margin-bottom: 100px;
    padding:20px;
-
 }
-
 .title h1 {
    font-family: "Bonheur Royale", cursive;
    font-size: 8em;
    color: var(--gray);
 }
-
 .photo-layer {
    background-color: #bfc994;
 }
@@ -57,13 +54,13 @@
    font-size: 5em;
    color: var(--gray);
 }
-
 .rsvp-home .form-container {
    width: 400px;
    max-width: 100%;
    margin-bottom: 100px;
 }
 
+/* mobile specific */
 @media screen and (max-width: 480px) {
    .title h1 {
       font-size: 4em;

@@ -8,18 +8,15 @@
     --green: #bfc994;
     --background: #fcf8ef;
 }
-
 .rsvp {
     margin-top: 100px;
     margin-bottom: 300px;
 }
-
 .rsvp h2 {
     font-family: "DM Serif Text", serif;
     font-size: 5em;
     color: var(--gray);
 }
-
 .rsvp .form-container {
     width: 400px;
     max-width: 100%;
