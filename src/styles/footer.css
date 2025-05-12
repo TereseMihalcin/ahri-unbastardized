@@ -8,7 +8,12 @@
    /* background: var(--green); */
    background-color: #7D93A5;
    padding-top:100px;
-}
+   /* background-image: url(/public/images/hands-center.jpg);
+   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height:700px; */
+} 
 .wedding .footer .attribution {
     color: wheat;
 }

@@ -25,7 +25,7 @@
    justify-content: center;
 }
 .photo-layer .photo-container {
-   max-width:1200px;
+   max-width: 1200px;
 }
 .photo-layer ul {
    display: flex;
