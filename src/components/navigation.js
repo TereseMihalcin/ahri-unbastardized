@@ -17,7 +17,7 @@ render() {
             <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/rsvp">RSVP</Nav.Link>
               <Nav.Link href="/about">Our story</Nav.Link>
-              <Nav.Link href="/travel">Travel and stay</Nav.Link>
+              <Nav.Link href="/location">Location</Nav.Link>
               <Nav.Link href="/registry">Registry</Nav.Link>
             </Nav>
           </Navbar.Collapse>

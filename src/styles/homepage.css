@@ -2,7 +2,8 @@
 
 :root {
    --gray: #7d93a5;
-   --green: #bfc994;
+   --pink: #d78693;
+   --green: #bcd786;
    --background: #fcf8ef;
 }
 .wedding{
@@ -10,7 +11,6 @@
 }
 .title {
    margin-top: 100px;
-   margin-bottom: 100px;
    padding:20px;
 }
 .title h1 {
@@ -19,7 +19,7 @@
    color: var(--gray);
 }
 .photo-layer {
-   background-color: #bfc994;
+   background-color: var(--green);
 }
 .photo-layer .photos {
    justify-content: center;
@@ -58,6 +58,10 @@
    width: 400px;
    max-width: 100%;
    margin-bottom: 100px;
+}
+.countdown{
+   font-family: "DM Serif Text", serif;
+   color: var(--gray);
 }
 
 /* mobile specific */

@@ -1,7 +1,6 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
 // import axios from 'axios';
 
 export default function Rsvpform() {
@@ -33,25 +32,17 @@ export default function Rsvpform() {
     <Form name="rsvp" method="POST" data-netlify="true" >
       <input type="hidden" name="form-name" value="rsvp" />
       <Form.Group className="mb-3" controlId="formBasicFirstName">
-      <Form.Label>First Name</Form.Label>
-        <Form.Control type="text" name="first" placeholder="" />
+        <Form.Label>Name(s)</Form.Label>
+        <Form.Control type="text" name="name" placeholder="" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicLastName">
-      <Form.Label>Last Name</Form.Label>
-         <Form.Control type="text" name="last" placeholder="" />
+      <Form.Group className="mb-3">
+        <Form.Label>How many party members?</Form.Label>
+        <Form.Control type="number" name="members" id="members" placeholder="0"/>
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicOthers">
-      <Row>
-        <Form.Label column="lg">Party Members/Plus ones?</Form.Label>
-      </Row>
-      <Form.Label>How Many?</Form.Label>
-      <Form.Control type="number" name="points" id="points" placeholder="0"/>
+      <Form.Group className="mb-3">
+        <Form.Label>Would you like a golf cart ride to the ceremony from the parking lot? It's a short walk on a mixed terrain path</Form.Label>
+        <Form.Check type="checkbox" name="golfcart" label="I'd like a ride" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicNames">
-      <Form.Label>Member Names</Form.Label>
-      <Form.Control type="textarea" as="textarea" name="party-names" rows="3" placeholder="Enter names of other party/family members"/>
-      </Form.Group>
-      
       <Button className="mb-3" variant="primary" type="submit">
         Submit
       </Button>

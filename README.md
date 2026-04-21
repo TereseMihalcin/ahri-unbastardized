@@ -13,7 +13,7 @@ Registry
 
 About/Our story
 
-Travel and Stay
+Location
 
 ### Notes / Ideas
 
