@@ -8,9 +8,7 @@ class Locations extends Component {
             <>
                 <Container className="location container ">
                     <h1 class="text-center">Location</h1>
-                    <div className="form-container">
                         <Location></Location>
-                    </div>
                 </Container>
             </>
     

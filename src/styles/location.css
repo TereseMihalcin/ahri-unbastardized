@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Slackey&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
 :root {
@@ -8,6 +9,7 @@
     --pink: #d78693;
     --green: #bcd786;
     --background: #fcf8ef;
+    --darker-bg: #f2ebda;
 }
 .location {
     margin-top: 100px;
@@ -21,5 +23,16 @@
     font-size: 4em;
 }
 .location h2 {
-    font-size: 3em;
+    font-size: 2.5em;
+}
+
+.location div.info {
+    background: var(--darker-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.location .info svg {
+    margin: auto;
+    display: block;
 }
