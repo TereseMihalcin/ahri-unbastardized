@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Slackey&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+:root {
+    --gray: #7d93a5;
+    --pink: #d78693;
+    --green: #bcd786;
+    --background: #fcf8ef;
+}
+.location {
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+.location :is(h1, h2, h3, h4) {
+    font-family: "DM Serif Text", serif;
+    color: var(--gray);
+}
+.location h1 {
+    font-size: 4em;
+}
+.location h2 {
+    font-size: 3em;
+}
