@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import maplibregl from 'maplibre-gl';
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 export default function Location() {
+  const mapContainer = useRef(null);
+
+  useEffect(() => {
+    const map = new maplibregl.Map({
+      container: mapContainer.current,
+      style: 'https://tiles.openfreemap.org/styles/bright',
+      center: [-79.505993, 40.187897],
+      zoom: 10
+    });
+ 
+    new maplibregl.Marker().setLngLat([-79.498009, 40.201099]).addTo(map); /* greendance */
+    new maplibregl.Marker().setLngLat([-79.483337, 40.143366]).addTo(map); /* Nino's */
+
+
+    return () => map.remove();
+  }, []);
+
   return (
     <>
     <div class="">
@@ -16,10 +35,15 @@ export default function Location() {
         <p class="flex-shrink-1">After the ceremony, we'll have dinner at Nino's restaurant nearby. At the time of writing this, I have never been so maybe I'll be as surprised as you! We'll take golden hour photos on Nino's property around 6:30. Afterward, we'll head in for some grub. Here is a link to their menu. You can order anything from their normal menu. So feel free to choose something now so you can look forward to it for months!</p>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path fill="#D78693" d="M990 45H535.5A35.2 35.2 0 0 1 500 11.6 35.2 35.2 0 0 1 464.5 45H10v10h454.5A35.2 35.2 0 0 1 500 88.4 35.2 35.2 0 0 1 535.5 55H990V45Z"></path></svg>
-        {/* linux map thing, with ceremony and dinner location */}
+        <div ref={mapContainer} style={{ height: '400px', width: '100%' }} />
+
+       
+        
         
     </div>
     
     </>
   );
 }
+
+
