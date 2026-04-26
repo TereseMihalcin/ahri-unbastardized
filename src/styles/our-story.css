@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Slackey&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+:root {
+    --gray: #7d93a5;
+    --pink: #d78693;
+    --green: #bcd786;
+    --background: #fcf8ef;
+    --darker-bg: #f2ebda;
+}
+.our-story {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.our-story :is(h1, h2, h3, h4) {
+    font-family: "DM Serif Text", serif;
+    color: var(--gray);
+}
+.our-story h1 {
+    font-size: 4em;
+}
+.our-story h2 {
+    font-size: 2.5em;
+}
+
+.our-story div.info {
+    background: var(--darker-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.our-story .info svg {
+    margin: auto;
+    display: block;
+}
+.our-story .photo-layer {
+    background-color: unset;
+}

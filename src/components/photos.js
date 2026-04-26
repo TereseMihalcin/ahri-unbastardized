@@ -1,0 +1,256 @@
+import React, { useEffect } from "react";
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+export default function Photogallery() {
+
+  useEffect(() => {
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#my-gallery',
+        children: 'a',
+        pswpModule: () => import('photoswipe')
+    });
+    lightbox.on('uiRegister', function() {
+        lightbox.pswp.ui.registerElement({
+            name: 'download-button',
+            order: 8,
+            isButton: true,
+            tagName: 'a',
+            html: {
+                isCustomSVG: true,
+                inner: '<path d="M20.5 14.3 17.1 18V10h-2.2v7.9l-3.4-3.6L10 16l6 6.1 6-6.1ZM23 23H9v2h14Z" id="pswp__icn-download"/>',
+                outlineID: 'pswp__icn-download',
+            },
+            onInit: (el, pswp) => {
+                el.setAttribute('download', '');
+                el.setAttribute('target', '_blank');
+                el.setAttribute('rel', 'noopener');
+                pswp.on('change', () => {
+                    el.href = pswp.currSlide.data.src;
+                });
+            }
+        });
+    });
+    lightbox.init();
+    return () => lightbox.destroy();
+  }, []);
+
+  return (
+    <>
+        
+                    <ul id="my-gallery">
+                        
+                        <li>
+                            <a href="./images/IMG_9707.jpg"
+                                data-pswp-width="4032"
+                                data-pswp-height="3024" 
+                                target="_blank">
+                                <img src="./images/IMG_9707.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_9195.jpg"
+                                data-pswp-width="3024"
+                                data-pswp-height="4032" 
+                                target="_blank">
+                                <img src="./images/IMG_9195.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_9107.jpg"
+                                data-pswp-width="1334"
+                                data-pswp-height="750" 
+                                target="_blank">
+                                <img src="./images/IMG_9107.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_9999copy.jpg"
+                                data-pswp-width="3024" 
+                                data-pswp-height="4032" 
+                                target="_blank">
+                                <img src="./images/IMG_9999copy.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_9152.jpg"
+                                data-pswp-width="1792"
+                                data-pswp-height="950" 
+                                target="_blank">
+                                <img src="./images/IMG_9152.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_9176.jpg"
+                                data-pswp-width="1334"
+                                data-pswp-height="750" 
+                                target="_blank">
+                                <img src="./images/IMG_9176.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/beach.jpg"
+                                data-pswp-width="1334"
+                                data-pswp-height="750" 
+                                target="_blank">
+                                <img src="./images/beach.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/early-ri.jpg"
+                                data-pswp-width="4032"
+                                data-pswp-height="3024" 
+                                target="_blank">
+                                <img src="./images/early-ri.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/gams.jpg"
+                                data-pswp-width="2448"
+                                data-pswp-height="3264" 
+                                target="_blank">
+                                <img src="./images/gams.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/grad.jpg"
+                                data-pswp-width="3024"
+                                data-pswp-height="4032" 
+                                target="_blank">
+                                <img src="./images/grad.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                         <a href="./images/lizzy-cute.jpg"
+                                data-pswp-width="3024"
+                                data-pswp-height="4032" 
+                                target="_blank">
+                                <img src="./images/lizzy-cute.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/maine.jpg"
+                                data-pswp-width="3024"
+                                data-pswp-height="4032" 
+                                target="_blank">
+                                <img src="./images/maine.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/prov.jpg"
+                                data-pswp-width="3024"
+                                data-pswp-height="4032" 
+                                target="_blank">
+                                <img src="./images/prov.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/wedding.jpg"
+                                data-pswp-width="4032"
+                                data-pswp-height="3024"
+                                target="_blank">
+                                <img src="./images/wedding.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/100_0575.JPG"
+                                data-pswp-width="2048"
+                                data-pswp-height="1536"
+                                target="_blank">
+                                <img src="./images/100_0575.JPG" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_0155.JPG"
+                                data-pswp-width="2048"
+                                data-pswp-height="1536"
+                                target="_blank">
+                                <img src="./images/IMG_0155.JPG" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_1663.jpg"
+                                data-pswp-width="3024"
+                                data-pswp-height="4032"
+                                target="_blank">
+                                <img src="./images/IMG_1663.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_7131.jpg"
+                                data-pswp-width="4032"
+                                data-pswp-height="3024"
+                                target="_blank">
+                                <img src="./images/IMG_7131.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_7580.jpg"
+                                data-pswp-width="4032"
+                                data-pswp-height="3024"
+                                target="_blank">
+                                <img src="./images/IMG_7580.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_7587.jpg"
+                                data-pswp-width="4032"
+                                data-pswp-height="3024"
+                                target="_blank">
+                                <img src="./images/IMG_7587.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_8642.jpg"
+                                data-pswp-width="3024"
+                                data-pswp-height="4032"
+                                target="_blank">
+                                <img src="./images/IMG_8642.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_7602.jpg"
+                                data-pswp-width="3024"
+                                data-pswp-height="4032"
+                                target="_blank">
+                                <img src="./images/IMG_7602.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_8477.jpg"
+                                data-pswp-width="4032"
+                                data-pswp-height="3024"
+                                target="_blank">
+                                <img src="./images/IMG_8477.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_8619.jpg"
+                                data-pswp-width="4032"
+                                data-pswp-height="3024"
+                                target="_blank">
+                                <img src="./images/IMG_8619.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_8234.jpg"
+                                data-pswp-width="4032"
+                                data-pswp-height="3024"
+                                target="_blank">
+                                <img src="./images/IMG_8234.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./images/IMG_8638.jpg"
+                                data-pswp-width="3024"
+                                data-pswp-height="4032"
+                                target="_blank">
+                                <img src="./images/IMG_8638.jpg" alt="Terese and Lizzy"/>
+                            </a>
+                        </li>
+                    </ul>
+    </>
+  );
+}
+
+
