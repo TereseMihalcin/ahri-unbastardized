@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+:root {
+  --gray: #7d93a5;
+  --pink: #d78693;
+  --green: #bcd786;
+  --background: #fcf8ef;
+}
+
+.registry {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.registry h2 {
+  font-family: "DM Serif Text", serif;
+  font-size: 4em;
+  color: var(--gray);
+  margin-bottom: 40px;
+}
+
+.registry-loading {
+  color: var(--gray);
+  font-family: "DM Serif Text", serif;
+  font-size: 1.2em;
+}
+
+.registry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.registry-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+}
+
+.registry-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.registry-card.claimed {
+  opacity: 0.55;
+}
+
+.registry-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.registry-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.registry-card-name {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.3em;
+  color: var(--gray);
+  margin-bottom: 6px;
+}
+
+.registry-card-desc {
+  font-size: 0.9em;
+  color: #888;
+  flex: 1;
+}
+
+.registry-card-price {
+  font-weight: 600;
+  color: var(--gray);
+  margin-bottom: 12px;
+}
+
+.registry-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.registry-link {
+  color: var(--gray);
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+.registry-link:hover {
+  color: var(--pink);
+}
+
+.registry-claim-btn,
+.registry-claim-btn:hover,
+.registry-claim-btn:focus,
+.registry-claim-btn:active {
+  background-color: var(--pink) !important;
+  border-color: var(--pink) !important;
+}
+
+.registry-error {
+  color: #c0392b;
+  font-size: 0.9em;
+  margin-top: 8px;
+}
