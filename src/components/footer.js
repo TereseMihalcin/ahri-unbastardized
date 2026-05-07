@@ -9,6 +9,7 @@ export default function Footer() {
         <p><a class="p-1 attribution" href="https://webneko.net">The little corner cat that looks like Ahri</a></p>
         <p><a class="p-1 attribution" href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a></p>
         <p><a class="p-1 attribution" href="https://codepen.io/amin120104/pen/eYpMjoz">Codepen Countdown</a></p>
+        <p><a class="p-1 attribution" href="https://github.com/hfg-gmuend/openmoji">Openmoji for map emojis</a></p>
       </div>
     </div>
     
