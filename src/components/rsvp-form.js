@@ -30,6 +30,7 @@ export default function Rsvpform() {
 //  }
   return (
     <Form name="rsvp" method="POST" data-netlify="true" >
+      <div class="card mb-3 mt-1"><div class="card-body text-muted small">Responses to this form go to my (Terese's) email. I have limited allowed responses, but enough for all of you to reply. Just don't spam it or anything lol</div></div>
       <input type="hidden" name="form-name" value="rsvp" />
       <Form.Group className="mb-3" controlId="formBasicFirstName">
         <Form.Label>Name(s)</Form.Label>
