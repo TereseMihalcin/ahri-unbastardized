@@ -27,7 +27,7 @@ export default function Registry() {
   return (
     <Container className="registry">
       <h2 class="text-center">Registry</h2>
-      <div class="card mb-5 border-0"><div class="card-body text-muted small">All of this is completely optional, but we wanted to have a couple options for family and friends just in case. Clicking "I'll get this" will prompt you to enter your name, and confirm. Your name won't be shown publicly and doing this will disable the gift for other people. If you need to remove yourself from a gift, just reach out to us.</div></div>
+      <div class="z-n1 card mb-5 border-0"><div class="card-body text-muted small">All of this is completely optional, but we wanted to have a couple options for family and friends just in case. Clicking "I'll get this" will prompt you to enter your name, and confirm. Your name won't be shown publicly and doing this will disable the gift for other people. If you need to remove yourself from a gift, just reach out to us.</div></div>
       {loading ? (
         <p className="registry-loading">Loading...</p>
       ) : (

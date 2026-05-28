@@ -27,9 +27,33 @@ const registryItems = [
     id: 'item-4',
     name: 'Ground bikerack',
     price: 77,
-    url: '  https://www.wayfair.com/ClosetMaid--ProGarage-Freestanding-Bike-Rack-DUJM1395-L3255-K~DUJM1395.html?refid=FR49-DUJM1395',
+    url: 'https://www.wayfair.com/ClosetMaid--ProGarage-Freestanding-Bike-Rack-DUJM1395-L3255-K~DUJM1395.html?refid=FR49-DUJM1395',
     image: '',
     description: 'Bikerack for garage and storage, does not have to be this exact one, but minimum space for three bikes'
+  },
+  {
+    id: 'item-5',
+    name: 'Mini Spatulas',
+    price: 10,
+    url: 'https://www.cuisinart.com/mini-spatulas-set-of-3/CTG-00-S3MS.html',
+    image: '',
+    description: 'Mini Spatulas for scraping out the extra waffle batter. Does not have to be these specific ones.'
+  },
+  {
+    id: 'item-6',
+    name: 'Oil Pourer and Mister',
+    price: 11,
+    url: 'https://www.cuisinart.com/2-in-1-oil-mister-and-pourer/CTG-00-MIS.html',
+    image: '',
+    description: 'Another kitchen gizmo'
+  },
+  {
+    id: 'item-7',
+    name: 'Kitchen Shears',
+    price: 8,
+    url: 'https://www.cuisinart.com/8-all-purpose-shears/C77-SHR8B.html',
+    image: '',
+    description: 'All purpose kitchen shears'
   },
 ];
 
