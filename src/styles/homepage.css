@@ -70,3 +70,25 @@
       font-size: 4em;
    }
 }
+
+.dresscode {
+   width: 200px;
+   position: absolute !important;
+   top: 300px;
+   left: 0px;
+   padding: 10px;
+   border: 2px dashed var(--gray) !important;
+   color: var(--gray) !important;
+   /* background-color: var(--darker-bg) !important; */
+   transform: rotate(-15deg);
+   z-index: -1;
+}
+@media screen and (max-width: 778px) {
+   .dresscode {
+      position: relative !important;
+      top: unset;
+      left: 50px;
+      z-index: -1;
+      margin-bottom: 25px;
+   }
+}
