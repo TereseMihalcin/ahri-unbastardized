@@ -7,5 +7,5 @@
 
 .wedding .sticky-top {
    background: var(--green);
-   z-index: 0; /* for neko */
+   z-index: 2; /* for neko */
 }

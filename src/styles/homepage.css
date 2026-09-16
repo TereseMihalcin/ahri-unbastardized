@@ -81,7 +81,7 @@
    color: var(--gray) !important;
    /* background-color: var(--darker-bg) !important; */
    transform: rotate(-15deg);
-   z-index: -1;
+   z-index: 1;
 }
 @media screen and (max-width: 778px) {
    .dresscode {
