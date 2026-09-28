@@ -12,7 +12,7 @@ const Home = () => {
             <div className="title d-flex justify-content-center">
                 <h1>Terese and Lizzy</h1>
             </div>
-            <div className="countdown d-flex justify-content-center">
+            <div className="countdown d-flex justify-content-center mb-5">
                 <Countdown></Countdown>
             </div>
             <div className="countdown dresscode card d-flex flex-column justify-content-center align-items-center">

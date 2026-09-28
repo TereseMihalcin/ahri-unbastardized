@@ -36,7 +36,7 @@ class Countdown extends React.Component {
             <div>
             <h2 className="d-flex justify-content-center">Saturday, September 26th | 4:30pm</h2>
                 {days === 0 && hours === 0 && minutes === 0 && seconds === 0
-                    ? <h1>Today is the day!</h1>
+                    ? "\n"
                     : 
                 
             <div className="time-box-wrapper d-flex justify-content-center">
